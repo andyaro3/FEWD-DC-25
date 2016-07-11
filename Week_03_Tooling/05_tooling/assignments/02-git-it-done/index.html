@@ -7,5 +7,29 @@
     <section class="container-1">
       <h1>Make me shine baby!</h1>
     </section>
+
+    <section>
+		    <div class="mask pseudo">
+		  <a href="http://css3create.com">
+		    <img src="http://dev.iamvdo.me/newLogoCSS3create2.png" alt="CSS3Create logo" />
+		  </a>
+		</div>
+		<p>Just over hover the logo. Enjoy.</p>
+
+		<p>Next demo: <a href="http://codepen.io/iamvdo/pen/xECmI" target="_blank">Progressive blur with CSS & SVG masks</a></p>
+
+		<svg height="0">
+		  <!-- THE mask -->
+		  <mask id="mask-firefox">
+		    <image width="150" height="64" xlink:href="http://dev.iamvdo.me/newLogoCSS3create2.png" filter="url(#filter)" /> 
+		  </mask>
+		  
+		  <!-- the filter to make the image white -->
+		  <filter id="filter">
+		    <feFlood flood-color="white" />
+		    <feComposite in2="SourceAlpha" operator="in" />
+		  </filter>
+		</svg>
+    </section>
   </body>
 </html>
